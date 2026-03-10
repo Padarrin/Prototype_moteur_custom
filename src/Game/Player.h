@@ -15,15 +15,14 @@ private :
 
 	ECS* m_pECS = nullptr;
 	RenderSystem* m_pRenderSystem = nullptr;
-	Mesh* m_pMinecartMesh = nullptr;
+	Mesh* m_pMeshPlayer = nullptr;
 	Entity* m_pPlayer = nullptr;
-	Entity* m_pMineCart = nullptr;
 
 	Render_Camera* m_pCam = nullptr;
 
-	Gun* m_pGun = nullptr;
+	//Gun* m_pGun = nullptr;
 
-	float m_minecartSpeed = 15.f;
+	//float m_minecartSpeed = 15.f;
 	int m_score = 0;
 
 public :

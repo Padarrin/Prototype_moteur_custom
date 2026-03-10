@@ -61,28 +61,27 @@ void PlayerController::UpdateKeyboardInputs(float _dt)
 
 	if (m_gameStop == false)
 	{
-		if (InputSystem::GetKeyDown(Keyboard::R))
+		/*if (InputSystem::GetKeyDown(Keyboard::R))
 		{
 			m_pPlayer->Reload(_dt);
+		}*/
+		if (InputSystem::GetKey(Keyboard::Z) || InputSystem::GetKey(Keyboard::W))
+		{
+			m_pPlayer->SetPosition(m_pPlayer->GetPosition().x, m_pPlayer->GetPosition().y, m_pPlayer->GetPosition().z + 5.f * _dt);
+		}
+		if (InputSystem::GetKey(Keyboard::S))
+		{
+			m_pPlayer->SetPosition(m_pPlayer->GetPosition().x, m_pPlayer->GetPosition().y, m_pPlayer->GetPosition().z - 5.f * _dt);
+		}
+		if (InputSystem::GetKey(Keyboard::D))
+		{
+			m_pPlayer->SetPosition(m_pPlayer->GetPosition().x + 5.f * _dt, m_pPlayer->GetPosition().y, m_pPlayer->GetPosition().z);
+		}
+		if (InputSystem::GetKey(Keyboard::Q) || InputSystem::GetKey(Keyboard::A))
+		{
+			m_pPlayer->SetPosition(m_pPlayer->GetPosition().x - 5.f * _dt, m_pPlayer->GetPosition().y, m_pPlayer->GetPosition().z);
 		}
 	}
-
-	/*if (InputSystem::GetKey(Keyboard::Z))
-	{
-		m_pPlayer->GetCam()->SetPosition(m_pPlayer->GetCam()->GetPosition().x, m_pPlayer->GetCam()->GetPosition().y, m_pPlayer->GetCam()->GetPosition().z + 5.f * _dt) ;
-	}
-	if (InputSystem::GetKey(Keyboard::S))
-	{
-		m_pPlayer->GetCam()->SetPosition(m_pPlayer->GetCam()->GetPosition().x, m_pPlayer->GetCam()->GetPosition().y, m_pPlayer->GetCam()->GetPosition().z - 5.f * _dt);
-	}
-	if (InputSystem::GetKey(Keyboard::D))
-	{
-		m_pPlayer->GetCam()->SetPosition(m_pPlayer->GetCam()->GetPosition().x + 5.f * _dt, m_pPlayer->GetCam()->GetPosition().y, m_pPlayer->GetCam()->GetPosition().z);
-	}
-	if (InputSystem::GetKey(Keyboard::Q))
-	{
-		m_pPlayer->GetCam()->SetPosition(m_pPlayer->GetCam()->GetPosition().x - 5.f * _dt, m_pPlayer->GetCam()->GetPosition().y, m_pPlayer->GetCam()->GetPosition().z );
-	}*/
 }
 
 void PlayerController::UpdateMouseInputs(float _dt)
