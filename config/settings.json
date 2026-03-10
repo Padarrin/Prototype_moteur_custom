@@ -1,0 +1,110 @@
+{
+    "projects": {
+        "013334FE-06E5-710D-5BEB-047A5FC15DC1": {
+            "config-debug": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [
+                "3C5D05A2-7479-5830-2BC4-4690408A12B2",
+                "3CF310FC-7E71-3C11-692A-08256FCE04B3"
+            ],
+            "dependents": [],
+            "name": "Test_Render",
+            "property-lib": false,
+            "property-pch": false,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "118D5ED8-73E6-789D-2EBF-4FB732274C7D": {
+            "config-debug": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [
+                "3C5D05A2-7479-5830-2BC4-4690408A12B2",
+                "3CF310FC-7E71-3C11-692A-08256FCE04B3"
+            ],
+            "dependents": [],
+            "name": "Game",
+            "property-lib": false,
+            "property-pch": false,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "3C5D05A2-7479-5830-2BC4-4690408A12B2": {
+            "config-debug": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [],
+            "dependents": [
+                "118D5ED8-73E6-789D-2EBF-4FB732274C7D",
+                "013334FE-06E5-710D-5BEB-047A5FC15DC1"
+            ],
+            "name": "Render",
+            "property-lib": true,
+            "property-pch": false,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "3CF310FC-7E71-3C11-692A-08256FCE04B3": {
+            "config-debug": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [],
+            "dependents": [
+                "118D5ED8-73E6-789D-2EBF-4FB732274C7D",
+                "013334FE-06E5-710D-5BEB-047A5FC15DC1"
+            ],
+            "name": "Engine",
+            "property-lib": true,
+            "property-pch": false,
+            "property-vcpkg": false,
+            "property-window": false
+        }
+    },
+    "projects_name_to_guid": {
+        "Engine": "3CF310FC-7E71-3C11-692A-08256FCE04B3",
+        "Game": "118D5ED8-73E6-789D-2EBF-4FB732274C7D",
+        "Render": "3C5D05A2-7479-5830-2BC4-4690408A12B2",
+        "Test_Render": "013334FE-06E5-710D-5BEB-047A5FC15DC1"
+    },
+    "solution_guid": "3B3742E5-6C1A-4C6E-018C-62127A5117D0",
+    "solution_name": "Projet_Moteur",
+    "startup_project": "",
+    "version": "2.0"
+}
